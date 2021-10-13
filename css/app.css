@@ -1,0 +1,102 @@
+:root {
+  --bs-blue: #037bc0;
+  --bs-green: #8cbc00;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+.hero {
+  background-image: url("../img/principal.jpg");
+  height: 25rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+.categoria img,
+li a img {
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+
+.categoria img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+li a img:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.galeria li:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+nav a:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* reescribir colores */
+.text-primary,
+.nombre-sitio {
+  color: var(--bs-blue) !important;
+}
+.btn-success {
+  background-color: var(--bs-green) !important;
+}
+.bg-primary,
+.btn-primary {
+  background-color: var(--bs-blue) !important;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  .hero {
+    height: 55rem;
+  }
+  .producto img {
+    height: 50rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}
